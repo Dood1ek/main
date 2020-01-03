@@ -1,0 +1,111 @@
+html {
+  box-sizing: border-box;
+  background: #8AA5D0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.platform-prices {
+  margin: 300px auto 0 auto;
+  width: 900px;
+  padding: 20px 30px;
+  background: white;
+  border-radius: 4px;
+  box-shadow:  0px 3px 14px 0px rgba(28, 28, 28, 0.47);
+}
+
+.platform-prices__title {
+  display: none;
+}
+
+.platform-prices__list {
+  display: flex;
+}
+
+.platform-prices__item {
+  width: calc(100% / 3);
+}
+
+.platform-rate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15px;
+  border-radius: 4px;
+  transition: background-color 0.4s ease 0s;
+}
+
+.platform-rate:hover {
+  background-color: #efefef;
+  cursor: pointer;
+}
+
+.platform-rate__title {
+  color: #5974CF;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 18px;
+  margin: 2px 10px;
+}
+
+.platform-rate__description {
+  color: #A7A9B3;
+  text-align: center;
+  font-size: 12px;
+  padding: 0 40px;
+}
+
+.platform-rate__price {
+  color: #5974CF;
+  font-size: 12px;
+  display: flex;
+}
+
+.platform-rate__price-value {
+  font-size: 30px;
+}
+
+.platform-rate__currency {
+  margin-top: 3px;
+}
+
+.platform-rate__payment-period::before {
+  content: "/";
+  font-size: 12px;
+  margin: 2px;
+}
+
+.platform-rate__payment-period {
+  align-self: flex-end;
+  margin-bottom: 2px;
+}
+
+/*
+  1. Удалили фиксированную ширину карточек
+  2. Удалили фиксированную ширину и высоту описания
+  3. Улучшили цвет фона при ховере
+  4. Добавили курсор поинтер
+  5. Закруглили края карточки
+  6. Сделали плавное изменение цвета при ховере
+  7. Поправили padding
+ */
